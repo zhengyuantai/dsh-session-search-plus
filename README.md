@@ -23,7 +23,7 @@ Restart DSH afterwards.
 - Built on dsh 0.2.2-rc.2 (MIT).
 - The query and compact-read changes are also described in
   [discussion #13215](https://github.com/deepseek-ai/deepseek-harness/discussions/13215).
-- This is an early community bundle. Back up your profile before installing, and remove it with
+- Verified: the patch behaviour on a local 0.2.2-rc.2 profile, and that `dsh plugin add` installs the bundle and registers it in the profile. Not yet verified: loading the packaged bundle on a clean profile, so treat 0.1.0 as early. Back up your profile before installing, and remove it with
   `dsh plugin --profile <your-profile> remove dsh-session-search-plus` if anything goes wrong.
 
 ## License
