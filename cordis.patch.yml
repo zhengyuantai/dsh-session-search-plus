@@ -1,0 +1,14 @@
+- insert:
+    - id: plus-session-search
+      name: cordis:group
+      group: true
+      isolate:
+        sessionQuery: true
+      config:
+        - id: plus-session-query-sqlite
+          name: 'dsh-session-search-plus/engine'
+          config:
+            path: ':memory:'
+            openAt: first-search
+        - id: plus-tool-session-query
+          name: 'dsh-session-search-plus/tools'
